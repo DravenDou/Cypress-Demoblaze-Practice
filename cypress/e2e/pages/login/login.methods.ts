@@ -25,14 +25,16 @@ export class loginMethods {
  static  clickLoginButton () : void {
              this.clickOnElement(loginLocators.loginButton)
    }
+   static  clickCloseButton () : void {
+     this.clickOnElement(loginLocators.closeButton)
+  }
+
 
    static loginMethod () : void {
     this.insertUsername();
     this.insertPassword();
     this.clickLoginButton();
-
-
-
+    this.clickCloseButton();
    }
 
 }
